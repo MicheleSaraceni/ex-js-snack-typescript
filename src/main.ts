@@ -1,4 +1,4 @@
-//------------------------------------Snack 1
+//--------------------------------------------------------------Snack 1
 
 // dato ricevuto da un API
 let dato: unknown;
@@ -18,3 +18,25 @@ if (typeof dato === "string") {
 } else {
   console.log("Tipo non supportato")
 }
+
+
+
+//--------------------------------------------------------------Snack 2
+
+type Dipendente = {
+  nome: string,
+  cognome: string,
+  annoNascita: number,
+  sesso: "m" | "f",
+  anniDiServizio: number[]
+}
+
+const dipendente1: Dipendente = {
+  nome: "Michele",
+  cognome: "Saraceni",
+  annoNascita: 1994,
+  sesso: "m",
+  anniDiServizio: [2020, 2021, 2022, 2023, 2024, 2025]
+}
+
+console.log(dipendente1);
